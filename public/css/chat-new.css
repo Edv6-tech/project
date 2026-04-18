@@ -1,0 +1,208 @@
+/* 🌤 GLOBAL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(to bottom right, #e6f2ff, #ffffff) !important;
+    color: #003366 !important;
+}
+
+/* 🔝 HEADER */
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    background: linear-gradient(135deg, #3399ff, #66ccff) !important;
+    color: white !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.chat-header h1 {
+    font-size: 20px;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* 👤 USER INFO */
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.user-details {
+    font-size: 13px;
+}
+
+.user-name {
+    font-weight: bold;
+}
+
+.user-email {
+    opacity: 0.8;
+}
+
+/* 🔘 BUTTONS */
+.header-btn {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 8px;
+    background: white;
+    color: #3399ff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.header-btn:hover {
+    background: #e6f2ff;
+}
+
+/* 🧱 MAIN LAYOUT */
+.chat-container {
+    display: flex;
+    height: calc(100vh - 70px);
+}
+
+/* 📚 SIDEBAR */
+.sidebar {
+    width: 260px;
+    background: #f4f9ff !important;
+    border-right: 1px solid #d6eaff;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-header {
+    padding: 15px;
+}
+
+.new-chat-btn {
+    width: 100%;
+    padding: 10px;
+    background: #3399ff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.new-chat-btn:hover {
+    background: #1f7ae0;
+}
+
+.sessions-list {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+/* 💬 CHAT AREA */
+.chat-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff !important;
+}
+
+/* 🧾 MESSAGES */
+.messages-container {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.empty-state {
+    text-align: center;
+    margin-top: 100px;
+    color: #6699cc;
+}
+
+/* ✉️ INPUT AREA */
+.input-area {
+    padding: 15px;
+    border-top: 1px solid #d6eaff;
+    background: #f9fcff;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.message-input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #cce0ff;
+    outline: none;
+    font-size: 14px;
+    resize: none;
+}
+
+.message-input:focus {
+    border-color: #3399ff;
+}
+
+/* 🚀 SEND BUTTON */
+.send-btn {
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: none;
+    background: #3399ff;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.send-btn:hover {
+    background: #1f7ae0;
+}
+
+/* ⚠️ ERROR */
+.error {
+    color: red;
+    margin-bottom: 5px;
+}
+
+/* 🔄 LOADING */
+.loading {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.spinner {
+    width: 25px;
+    height: 25px;
+    border: 3px solid #cce0ff;
+    border-top: 3px solid #3399ff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: auto;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

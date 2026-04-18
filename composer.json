@@ -1,0 +1,14 @@
+{
+    "name": "ziel/ai-chat-assistant",
+    "description": "AI Chat Application that helps students with assignments",
+    "require": {
+        "php": ">=7.4",
+        "firebase/php-jwt": "^7.0",
+        "google/apiclient": "^2.19"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}

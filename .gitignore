@@ -1,0 +1,75 @@
+# Dependencies
+vendor/
+node_modules/
+
+# Environment files
+.env
+.env.local
+.env.production
+.env.example
+
+# Configuration files with sensitive data
+config/config.php
+config/db.php
+config/config.env.php
+
+# Logs
+logs/
+*.log
+error.log
+access.log
+
+# Temporary files
+tmp/
+temp/
+cache/
+*.tmp
+*.cache
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Debug files (remove for production)
+debug_*.php
+test_*.php
+force_refresh.php
+view-logs.php
+
+# Upload directories
+uploads/
+user_uploads/
+
+# Session files
+sessions/
+
+# Composer
+composer.lock
+
+# PHPUnit
+phpunit.xml
+.phpunit.result.cache
+
+# Coverage reports
+coverage/
+
+# Build artifacts
+build/
+dist/
+
+# Local development
+.local
+.local.php
